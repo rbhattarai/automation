@@ -46,7 +46,7 @@ public class BrowserFactory {
 		case IE:
 			driver = drivers.get("IE");
 			if (driver == null) {
-				System.setProperty("webdriver.ie.driver", BROWSER_DRIVER + "IEDriverServer.exe")
+				System.setProperty("webdriver.ie.driver", BROWSER_DRIVER + "IEDriverServer.exe");
 				driver = new InternetExplorerDriver();
 				drivers.put("IE", driver);
 			}
