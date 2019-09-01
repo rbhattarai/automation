@@ -1,0 +1,57 @@
+package com.selenium.framework.factory;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+
+public class BrowserFactory {
+
+	private static Map<String, WebDriver> drivers = new HashMap<String, WebDriver>();
+	private static final String BROWSER_DRIVER = "F:\\GITHUB\\setups\\BROWSER_DRIVERS\\";
+
+	/**
+	 * Factory method for getting browsers
+	 */
+	public static WebDriver getBrowser(BrowserName browserName)
+	{
+		WebDriver driver = null;
+		
+		switch (browserName)
+		{
+		case CHROME:
+			driver = drivers.get("Chrome");
+			if (driver == null) {
+				System.setProperty("webdriver.chrome.driver", BROWSER_DRIVER + "chromedriver.exe");
+				driver = new ChromeDriver();
+				drivers.put("Chrome", driver);
+			}
+			break;
+			
+		case FIREFOX:
+			driver = drivers.get("Firefox");
+			if (driver == null) {
+				System.setProperty("webdriver.gecko.driver", BROWSER_DRIVER + "geckodriver.exe");
+				FirefoxOptions ffOptions = new FirefoxOptions();
+				ffOptions.setCapability("marionette", true);
+				driver = new FirefoxDriver(ffOptions);
+				drivers.put("Firefox", driver);
+			}
+			break;
+			
+		case IE:
+			driver = drivers.get("IE");
+			if (driver == null) {
+				System.setProperty("webdriver.ie.driver", BROWSER_DRIVER + "IEDriverServer.exe")
+				driver = new InternetExplorerDriver();
+				drivers.put("IE", driver);
+			}
+			break;
+		}	
+		return driver;
+	}
+}

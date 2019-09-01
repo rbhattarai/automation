@@ -1,0 +1,315 @@
+2019-08-30 18:47:19,541 INFO  [Log] **************************************************************************************** 
+2019-08-30 18:47:19,542 INFO  [Log] **************************************************************************************** 
+2019-08-30 18:47:19,545 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TC: RestAssured Get Weather Details       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2019-08-30 18:47:19,545 INFO  [Log] **************************************************************************************** 
+2019-08-30 18:47:19,545 INFO  [Log] **************************************************************************************** 
+2019-08-30 18:47:19,545 INFO  [Log] Specify baseURI to RESTful WebService 
+2019-08-30 18:47:19,920 INFO  [Log] Get RequestSpecification of request 
+2019-08-30 18:47:20,047 INFO  [Log] Request server and get response 
+2019-08-30 18:47:21,180 INFO  [Log] Print response body 
+2019-08-30 18:47:21,210 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2019-08-30 18:47:21,210 INFO  [Log] X 
+2019-08-30 18:47:21,210 INFO  [Log] X 
+2019-08-30 18:47:21,210 INFO  [Log] X 
+2019-08-30 18:47:21,210 INFO  [Log] X 
+2019-08-30 18:47:21,225 INFO  [Log] **************************************************************************************** 
+2019-08-30 18:47:21,225 INFO  [Log] **************************************************************************************** 
+2019-08-30 18:47:21,225 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TC: RestAssured Verify Status Code       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2019-08-30 18:47:21,225 INFO  [Log] **************************************************************************************** 
+2019-08-30 18:47:21,225 INFO  [Log] **************************************************************************************** 
+2019-08-30 18:47:21,225 INFO  [Log] Specify baseURI to RESTful WebService 
+2019-08-30 18:47:21,225 INFO  [Log] Get RequestSpecification of request 
+2019-08-30 18:47:21,226 INFO  [Log] Request server and get response 
+2019-08-30 18:47:21,708 INFO  [Log] **************************************************************************************** 
+2019-08-30 18:47:21,708 INFO  [Log] **************************************************************************************** 
+2019-08-30 18:47:21,708 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TC: RestAssured Verify Status Code       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2019-08-30 18:47:21,709 INFO  [Log] **************************************************************************************** 
+2019-08-30 18:47:21,709 INFO  [Log] **************************************************************************************** 
+2019-08-30 18:47:21,709 INFO  [Log] Specify baseURI to RESTful WebService 
+2019-08-30 18:47:21,709 INFO  [Log] Get RequestSpecification of request 
+2019-08-30 18:47:21,709 INFO  [Log] Request server and get response 
+2019-08-30 18:47:22,039 INFO  [Log] Assert Status Code correct: 200 
+2019-08-30 18:47:22,046 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2019-08-30 18:47:22,046 INFO  [Log] X 
+2019-08-30 18:47:22,046 INFO  [Log] X 
+2019-08-30 18:47:22,046 INFO  [Log] X 
+2019-08-30 18:47:22,046 INFO  [Log] X 
+2019-08-30 18:47:22,070 INFO  [Log] 1. Open Browser with URL: http://www.amazon.com 
+2019-08-30 18:47:30,918 INFO  [Log] **************************************************************************************** 
+2019-08-30 18:47:30,918 INFO  [Log] **************************************************************************************** 
+2019-08-30 18:47:30,918 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TC: SeleniumWD Search and Verify       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2019-08-30 18:47:30,918 INFO  [Log] **************************************************************************************** 
+2019-08-30 18:47:30,918 INFO  [Log] **************************************************************************************** 
+2019-08-30 18:47:30,918 INFO  [Log] 2. Change the search type to Electronics 
+2019-08-30 18:47:31,556 INFO  [Log] 3. Enter the search term calculators 
+2019-08-30 18:47:31,738 INFO  [Log] 4. Click the Search button 
+2019-08-30 18:47:35,740 INFO  [Log] 5. Sort the results by "Average Customer Review" 
+2019-08-30 18:47:39,294 INFO  [Log] 6. Filter results to only show calculators in the range of $300 to $350 
+2019-08-30 18:47:41,279 INFO  [Log] 7. Save , all the search results into a List of WebElements 
+2019-08-30 18:47:41,362 INFO  [Log] 18 results for Electronics : $300-$350 : "calculator" 
+2019-08-30 18:47:41,362 INFO  [Log] 8. Use a for-each loop to assert that each result title contains the word calculator 
+2019-08-30 18:47:41,394 INFO  [Log] 100 Units X 10-Digit Scientific Calculator 
+2019-08-30 18:47:41,423 INFO  [Log] HP 15C Limited Edition Scientific Calculator 
+2019-08-30 18:47:41,447 INFO  [Log] Low Vision Scientific Calculator 
+2019-08-30 18:47:41,470 INFO  [Log] SHRQS2770H - Sharp QS2770H Commercial Calculator 
+2019-08-30 18:47:41,494 INFO  [Log] Wholesale CASE of 3 - Victor 12-Digit Thermal Printing Calculator-14-Digit Thermal Printing Calculator,8-1/2"x12"x3-1/2", Gray 
+2019-08-30 18:47:41,515 INFO  [Log] Compucessory Simple 12-Digit LCD Calculator (40 Units) 
+2019-08-30 18:47:41,537 INFO  [Log] Touch Color Screen Graph Calculator English SAT/AP/IB Exam 
+2019-08-30 18:47:41,561 INFO  [Log] Oval Calculator - 250 Quantity - $1.39 Each - Promotional Product/Bulk/Branded with Your Logo/Customized 
+2019-08-30 18:47:41,694 INFO  [Log] Calculator Desktop Calculator Dual Power Supply   12 Digits Widescreen Display Plastic Button Automatic Shut-Down (Pack of 10) 
+2019-08-30 18:47:41,722 INFO  [Log] Calculated Construction Calculator 
+2019-08-30 18:47:41,748 INFO  [Log] SHRQS2760H - QS-2760H Two-Color Ribbon Printing Calculator 
+2019-08-30 18:47:41,774 INFO  [Log] HP 11C Scientific Calculator-Like New/Almost MINT! 
+2019-08-30 18:47:41,797 INFO  [Log] Giant Calculator ((10 Pack)) 
+2019-08-30 18:47:41,823 INFO  [Log] Wholesale CASE of 3 - Sharp 12-digit Commercial Print/Display Calculator-12-Digit Calculator, 2 Color Printing, 9-1/2"x12-1/2"x2-2/3" 
+2019-08-30 18:47:41,846 INFO  [Log] Wholesale CASE of 10 - Sharp 12-Digit Semi Desktop Display Calculator-12-Digit Calculator,Dual Power,4-Key Memory,4-1/3"x7"x3/4" 
+2019-08-30 18:47:41,867 INFO  [Log] TI Calculator Base Lab 2 
+2019-08-30 18:47:41,889 INFO  [Log] 10-digit display calculator GENTOS (Gen toss) friendly calculator (nice mini size) White YD-361 (japan import) 
+2019-08-30 18:47:41,910 INFO  [Log] BAZIC 8-Digit Pocket Size Calculator w/ Flip Cover 
+2019-08-30 18:47:41,919 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2019-08-30 18:47:41,919 INFO  [Log] X 
+2019-08-30 18:47:41,919 INFO  [Log] X 
+2019-08-30 18:47:41,919 INFO  [Log] X 
+2019-08-30 18:47:41,919 INFO  [Log] X 
+2019-08-30 18:47:41,920 INFO  [Log] Close Browser 
+2019-08-30 19:43:59,583 INFO  [Log] **************************************************************************************** 
+2019-08-30 19:43:59,583 INFO  [Log] **************************************************************************************** 
+2019-08-30 19:43:59,585 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TC: RestAssured Get Weather Details       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2019-08-30 19:43:59,586 INFO  [Log] **************************************************************************************** 
+2019-08-30 19:43:59,586 INFO  [Log] **************************************************************************************** 
+2019-08-30 19:43:59,586 INFO  [Log] Specify baseURI to RESTful WebService 
+2019-08-30 19:43:59,967 INFO  [Log] Get RequestSpecification of request 
+2019-08-30 19:44:00,066 INFO  [Log] Request server and get response 
+2019-08-30 19:44:01,154 INFO  [Log] Print response body 
+2019-08-30 19:44:01,174 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2019-08-30 19:44:01,174 INFO  [Log] X 
+2019-08-30 19:44:01,174 INFO  [Log] X 
+2019-08-30 19:44:01,174 INFO  [Log] X 
+2019-08-30 19:44:01,174 INFO  [Log] X 
+2019-08-30 19:44:01,186 INFO  [Log] **************************************************************************************** 
+2019-08-30 19:44:01,186 INFO  [Log] **************************************************************************************** 
+2019-08-30 19:44:01,186 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TC: RestAssured Verify Status Code       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2019-08-30 19:44:01,186 INFO  [Log] **************************************************************************************** 
+2019-08-30 19:44:01,186 INFO  [Log] **************************************************************************************** 
+2019-08-30 19:44:01,186 INFO  [Log] Specify baseURI to RESTful WebService 
+2019-08-30 19:44:01,186 INFO  [Log] Get RequestSpecification of request 
+2019-08-30 19:44:01,187 INFO  [Log] Request server and get response 
+2019-08-30 19:44:01,680 INFO  [Log] **************************************************************************************** 
+2019-08-30 19:44:01,681 INFO  [Log] **************************************************************************************** 
+2019-08-30 19:44:01,681 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TC: RestAssured Verify Status Code       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2019-08-30 19:44:01,681 INFO  [Log] **************************************************************************************** 
+2019-08-30 19:44:01,681 INFO  [Log] **************************************************************************************** 
+2019-08-30 19:44:01,681 INFO  [Log] Specify baseURI to RESTful WebService 
+2019-08-30 19:44:01,681 INFO  [Log] Get RequestSpecification of request 
+2019-08-30 19:44:01,681 INFO  [Log] Request server and get response 
+2019-08-30 19:44:01,782 INFO  [Log] Assert Status Code correct: 200 
+2019-08-30 19:44:01,785 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2019-08-30 19:44:01,785 INFO  [Log] X 
+2019-08-30 19:44:01,785 INFO  [Log] X 
+2019-08-30 19:44:01,785 INFO  [Log] X 
+2019-08-30 19:44:01,785 INFO  [Log] X 
+2019-08-30 19:44:01,798 INFO  [Log] 1. Open Browser with URL: http://www.amazon.com 
+2019-08-30 19:44:09,624 INFO  [Log] **************************************************************************************** 
+2019-08-30 19:44:09,625 INFO  [Log] **************************************************************************************** 
+2019-08-30 19:44:09,625 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TC: SeleniumWD Search and Verify       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2019-08-30 19:44:09,625 INFO  [Log] **************************************************************************************** 
+2019-08-30 19:44:09,625 INFO  [Log] **************************************************************************************** 
+2019-08-30 19:44:09,625 INFO  [Log] 2. Change the search type to Electronics 
+2019-08-30 19:44:10,452 INFO  [Log] 3. Enter the search term calculators 
+2019-08-30 19:44:10,667 INFO  [Log] 4. Click the Search button 
+2019-08-30 19:44:14,201 INFO  [Log] 5. Sort the results by "Average Customer Review" 
+2019-08-30 19:44:16,427 INFO  [Log] 6. Filter results to only show calculators in the range of $300 to $350 
+2019-08-30 19:44:18,362 INFO  [Log] 7. Save , all the search results into a List of WebElements 
+2019-08-30 19:44:18,423 INFO  [Log] 15 results for Electronics : $300-$350 : "calculator" 
+2019-08-30 19:44:18,423 INFO  [Log] 8. Use a for-each loop to assert that each result title contains the word calculator 
+2019-08-30 19:44:18,453 INFO  [Log] 100 Units X 10-Digit Scientific Calculator 
+2019-08-30 19:44:18,482 INFO  [Log] SHRQS2770H - Sharp QS2770H Commercial Calculator 
+2019-08-30 19:44:18,510 INFO  [Log] Wholesale CASE of 3 - Victor 12-Digit Thermal Printing Calculator-14-Digit Thermal Printing Calculator,8-1/2"x12"x3-1/2", Gray 
+2019-08-30 19:44:18,534 INFO  [Log] Compucessory Simple 12-Digit LCD Calculator (40 Units) 
+2019-08-30 19:44:18,560 INFO  [Log] Touch Color Screen Graph Calculator English SAT/AP/IB Exam 
+2019-08-30 19:44:18,586 INFO  [Log] Oval Calculator - 250 Quantity - $1.39 Each - Promotional Product/Bulk/Branded with Your Logo/Customized 
+2019-08-30 19:44:18,612 INFO  [Log] Calculator Desktop Calculator Dual Power Supply   12 Digits Widescreen Display Plastic Button Automatic Shut-Down (Pack of 10) 
+2019-08-30 19:44:18,637 INFO  [Log] Calculated Construction Calculator 
+2019-08-30 19:44:18,779 INFO  [Log] SHRQS2760H - QS-2760H Two-Color Ribbon Printing Calculator 
+2019-08-30 19:44:18,801 INFO  [Log] Giant Calculator ((10 Pack)) 
+2019-08-30 19:44:18,827 INFO  [Log] Wholesale CASE of 3 - Sharp 12-digit Commercial Print/Display Calculator-12-Digit Calculator, 2 Color Printing, 9-1/2"x12-1/2"x2-2/3" 
+2019-08-30 19:44:18,851 INFO  [Log] Wholesale CASE of 10 - Sharp 12-Digit Semi Desktop Display Calculator-12-Digit Calculator,Dual Power,4-Key Memory,4-1/3"x7"x3/4" 
+2019-08-30 19:44:18,878 INFO  [Log] TI Calculator Base Lab 2 
+2019-08-30 19:44:18,906 INFO  [Log] 10-digit display calculator GENTOS (Gen toss) friendly calculator (nice mini size) White YD-361 (japan import) 
+2019-08-30 19:44:18,933 INFO  [Log] BAZIC 8-Digit Pocket Size Calculator w/ Flip Cover 
+2019-08-30 19:44:18,958 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2019-08-30 19:44:18,959 INFO  [Log] X 
+2019-08-30 19:44:18,959 INFO  [Log] X 
+2019-08-30 19:44:18,959 INFO  [Log] X 
+2019-08-30 19:44:18,959 INFO  [Log] X 
+2019-08-30 19:44:18,960 INFO  [Log] Close Browser 
+2019-08-31 14:56:43,468 INFO  [Log] **************************************************************************************** 
+2019-08-31 14:56:43,564 INFO  [Log] ****************************          TC: RestAssured Get Weather Details       ************************* 
+2019-08-31 14:56:43,564 INFO  [Log] **************************************************************************************** 
+2019-08-31 14:56:43,564 INFO  [Log] Specify baseURI to RESTful WebService 
+2019-08-31 14:56:43,919 INFO  [Log] Get RequestSpecification of request 
+2019-08-31 14:56:44,013 INFO  [Log] Request server and get response 
+2019-08-31 14:56:45,032 INFO  [Log] Print response body 
+2019-08-31 14:56:45,049 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2019-08-31 14:56:45,049 INFO  [Log] X 
+2019-08-31 14:56:45,117 INFO  [Log] **************************************************************************************** 
+2019-08-31 14:56:45,117 INFO  [Log] ****************************          TC: RestAssured Verify Status Code       ************************* 
+2019-08-31 14:56:45,117 INFO  [Log] **************************************************************************************** 
+2019-08-31 14:56:45,117 INFO  [Log] Specify baseURI to RESTful WebService 
+2019-08-31 14:56:45,117 INFO  [Log] Get RequestSpecification of request 
+2019-08-31 14:56:45,117 INFO  [Log] Request server and get response 
+2019-08-31 14:56:45,772 INFO  [Log] **************************************************************************************** 
+2019-08-31 14:56:45,772 INFO  [Log] ****************************          TC: RestAssured Verify Status Code       ************************* 
+2019-08-31 14:56:45,772 INFO  [Log] **************************************************************************************** 
+2019-08-31 14:56:45,772 INFO  [Log] Specify baseURI to RESTful WebService 
+2019-08-31 14:56:45,772 INFO  [Log] Get RequestSpecification of request 
+2019-08-31 14:56:45,773 INFO  [Log] Request server and get response 
+2019-08-31 14:56:46,084 INFO  [Log] Assert Status Code correct: 200 
+2019-08-31 14:56:46,097 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2019-08-31 14:56:46,097 INFO  [Log] X 
+2019-08-31 14:56:46,107 INFO  [Log] 1. Open Browser with URL: http://www.amazon.com 
+2019-08-31 14:56:56,306 INFO  [Log] **************************************************************************************** 
+2019-08-31 14:56:56,306 INFO  [Log] ****************************          TC: SeleniumWD Search and Verify       ************************* 
+2019-08-31 14:56:56,306 INFO  [Log] **************************************************************************************** 
+2019-08-31 14:56:56,306 INFO  [Log] 2. Change the search type to Electronics 
+2019-08-31 14:56:57,190 INFO  [Log] 3. Enter the search term calculators 
+2019-08-31 14:56:57,402 INFO  [Log] 4. Click the Search button 
+2019-08-31 14:57:00,046 INFO  [Log] 5. Sort the results by "Average Customer Review" 
+2019-08-31 14:57:02,188 INFO  [Log] 6. Filter results to only show calculators in the range of $300 to $350 
+2019-08-31 14:57:04,015 INFO  [Log] 7. Save , all the search results into a List of WebElements 
+2019-08-31 14:57:04,079 INFO  [Log] 17 results for Electronics : $300-$350 : "calculator" 
+2019-08-31 14:57:04,079 INFO  [Log] 8. Use a for-each loop to assert that each result title contains the word calculator 
+2019-08-31 14:57:04,117 INFO  [Log] 100 Units X 10-Digit Scientific Calculator 
+2019-08-31 14:57:04,144 INFO  [Log] HP 15C Limited Edition Scientific Calculator 
+2019-08-31 14:57:04,168 INFO  [Log] Low Vision Scientific Calculator 
+2019-08-31 14:57:04,189 INFO  [Log] SHRQS2770H - Sharp QS2770H Commercial Calculator 
+2019-08-31 14:57:04,210 INFO  [Log] Wholesale CASE of 3 - Victor 12-Digit Thermal Printing Calculator-14-Digit Thermal Printing Calculator,8-1/2"x12"x3-1/2", Gray 
+2019-08-31 14:57:04,235 INFO  [Log] Compucessory Simple 12-Digit LCD Calculator (40 Units) 
+2019-08-31 14:57:04,257 INFO  [Log] Touch Color Screen Graph Calculator English SAT/AP/IB Exam 
+2019-08-31 14:57:04,281 INFO  [Log] Oval Calculator - 250 Quantity - $1.39 Each - Promotional Product/Bulk/Branded with Your Logo/Customized 
+2019-08-31 14:57:04,527 INFO  [Log] Calculator Desktop Calculator Dual Power Supply   12 Digits Widescreen Display Plastic Button Automatic Shut-Down (Pack of 10) 
+2019-08-31 14:57:04,554 INFO  [Log] SHRQS2760H - QS-2760H Two-Color Ribbon Printing Calculator 
+2019-08-31 14:57:04,585 INFO  [Log] HP 11C Scientific Calculator-Like New/Almost MINT! 
+2019-08-31 14:57:04,608 INFO  [Log] Giant Calculator ((10 Pack)) 
+2019-08-31 14:57:04,632 INFO  [Log] Wholesale CASE of 3 - Sharp 12-digit Commercial Print/Display Calculator-12-Digit Calculator, 2 Color Printing, 9-1/2"x12-1/2"x2-2/3" 
+2019-08-31 14:57:04,653 INFO  [Log] Wholesale CASE of 10 - Sharp 12-Digit Semi Desktop Display Calculator-12-Digit Calculator,Dual Power,4-Key Memory,4-1/3"x7"x3/4" 
+2019-08-31 14:57:04,676 INFO  [Log] TI Calculator Base Lab 2 
+2019-08-31 14:57:04,696 INFO  [Log] 10-digit display calculator GENTOS (Gen toss) friendly calculator (nice mini size) White YD-361 (japan import) 
+2019-08-31 14:57:04,718 INFO  [Log] BAZIC 8-Digit Pocket Size Calculator w/ Flip Cover 
+2019-08-31 14:57:04,725 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2019-08-31 14:57:04,725 INFO  [Log] X 
+2019-08-31 14:57:04,726 INFO  [Log] Close Browser 
+2019-08-31 15:11:21,281 INFO  [Log] **************************************************************************************** 
+2019-08-31 15:11:21,284 INFO  [Log] ****************************          TC: RestAssured Get Details       ************************* 
+2019-08-31 15:11:21,284 INFO  [Log] **************************************************************************************** 
+2019-08-31 15:11:21,284 INFO  [Log] Specify baseURI to RESTful WebService 
+2019-08-31 15:11:21,622 INFO  [Log] Get RequestSpecification of request 
+2019-08-31 15:11:21,714 INFO  [Log] Request server and get response 
+2019-08-31 15:11:22,787 INFO  [Log] Print response body 
+2019-08-31 15:11:22,805 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2019-08-31 15:11:22,805 INFO  [Log] X 
+2019-08-31 15:11:22,815 INFO  [Log] **************************************************************************************** 
+2019-08-31 15:11:22,815 INFO  [Log] ****************************          TC: RestAssured Verify Specific Data       ************************* 
+2019-08-31 15:11:22,815 INFO  [Log] **************************************************************************************** 
+2019-08-31 15:11:22,815 INFO  [Log] Specify baseURI to RESTful WebService 
+2019-08-31 15:11:22,815 INFO  [Log] Get RequestSpecification of request 
+2019-08-31 15:11:22,816 INFO  [Log] Request server and get response 
+2019-08-31 15:11:23,225 INFO  [Log] **************************************************************************************** 
+2019-08-31 15:11:23,225 INFO  [Log] ****************************          TC: RestAssured Verify Status Code       ************************* 
+2019-08-31 15:11:23,225 INFO  [Log] **************************************************************************************** 
+2019-08-31 15:11:23,225 INFO  [Log] Specify baseURI to RESTful WebService 
+2019-08-31 15:11:23,225 INFO  [Log] Get RequestSpecification of request 
+2019-08-31 15:11:23,226 INFO  [Log] Request server and get response 
+2019-08-31 15:11:23,344 INFO  [Log] Assert Status Code correct: 200 
+2019-08-31 15:11:23,346 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2019-08-31 15:11:23,346 INFO  [Log] X 
+2019-08-31 15:11:23,356 INFO  [Log] Open Browser with URL: http://www.amazon.com 
+2019-08-31 15:11:31,034 INFO  [Log] **************************************************************************************** 
+2019-08-31 15:11:31,034 INFO  [Log] ****************************          TC: SeleniumWD Search and Verify       ************************* 
+2019-08-31 15:11:31,034 INFO  [Log] **************************************************************************************** 
+2019-08-31 15:11:31,034 INFO  [Log] 1. Change the search type to Electronics 
+2019-08-31 15:11:31,680 INFO  [Log] 2. Enter the search term calculators 
+2019-08-31 15:11:31,895 INFO  [Log] 3. Click the Search button 
+2019-08-31 15:11:34,177 INFO  [Log] 4. Sort the results by "Average Customer Review" 
+2019-08-31 15:11:36,464 INFO  [Log] 5. Filter results to only show calculators in the range of $300 to $350 
+2019-08-31 15:11:38,530 INFO  [Log] 6. Save , all the search results into a List of WebElements 
+2019-08-31 15:11:38,612 INFO  [Log] 18 results for Electronics : $300-$350 : "calculator" 
+2019-08-31 15:11:38,612 INFO  [Log] 7. Use a for-each loop to assert that each result title contains the word calculator 
+2019-08-31 15:11:38,646 INFO  [Log] Hewlett Packard 41CV calculator 
+2019-08-31 15:11:38,671 INFO  [Log] 100 Units X 10-Digit Scientific Calculator 
+2019-08-31 15:11:38,693 INFO  [Log] HP 15C Limited Edition Scientific Calculator 
+2019-08-31 15:11:38,716 INFO  [Log] Low Vision Scientific Calculator 
+2019-08-31 15:11:38,740 INFO  [Log] SHRQS2770H - Sharp QS2770H Commercial Calculator 
+2019-08-31 15:11:38,762 INFO  [Log] Wholesale CASE of 3 - Victor 12-Digit Thermal Printing Calculator-14-Digit Thermal Printing Calculator,8-1/2"x12"x3-1/2", Gray 
+2019-08-31 15:11:38,785 INFO  [Log] Compucessory Simple 12-Digit LCD Calculator (40 Units) 
+2019-08-31 15:11:38,807 INFO  [Log] Touch Color Screen Graph Calculator English SAT/AP/IB Exam 
+2019-08-31 15:11:38,926 INFO  [Log] Oval Calculator - 250 Quantity - $1.39 Each - Promotional Product/Bulk/Branded with Your Logo/Customized 
+2019-08-31 15:11:38,956 INFO  [Log] Calculator Desktop Calculator Dual Power Supply   12 Digits Widescreen Display Plastic Button Automatic Shut-Down (Pack of 10) 
+2019-08-31 15:11:38,983 INFO  [Log] SHRQS2760H - QS-2760H Two-Color Ribbon Printing Calculator 
+2019-08-31 15:11:39,009 INFO  [Log] HP 11C Scientific Calculator-Like New/Almost MINT! 
+2019-08-31 15:11:39,034 INFO  [Log] Giant Calculator ((10 Pack)) 
+2019-08-31 15:11:39,060 INFO  [Log] Wholesale CASE of 3 - Sharp 12-digit Commercial Print/Display Calculator-12-Digit Calculator, 2 Color Printing, 9-1/2"x12-1/2"x2-2/3" 
+2019-08-31 15:11:39,087 INFO  [Log] Wholesale CASE of 10 - Sharp 12-Digit Semi Desktop Display Calculator-12-Digit Calculator,Dual Power,4-Key Memory,4-1/3"x7"x3/4" 
+2019-08-31 15:11:39,113 INFO  [Log] TI Calculator Base Lab 2 
+2019-08-31 15:11:39,141 INFO  [Log] 10-digit display calculator GENTOS (Gen toss) friendly calculator (nice mini size) White YD-361 (japan import) 
+2019-08-31 15:11:39,170 INFO  [Log] BAZIC 8-Digit Pocket Size Calculator w/ Flip Cover 
+2019-08-31 15:11:39,180 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2019-08-31 15:11:39,180 INFO  [Log] X 
+2019-08-31 15:11:39,181 INFO  [Log] Close Browser 
+2019-08-31 15:25:39,487 INFO  [Log] Open Browser with URL: http://www.amazon.com 
+2019-08-31 15:25:48,333 INFO  [Log] **************************************************************************************** 
+2019-08-31 15:25:48,333 INFO  [Log] ****************************          TC: SeleniumWD Search and Verify       ************************* 
+2019-08-31 15:25:48,333 INFO  [Log] **************************************************************************************** 
+2019-08-31 15:25:48,333 INFO  [Log] 1. Change the search type to Electronics 
+2019-08-31 15:25:49,190 INFO  [Log] 2. Enter the search term calculators 
+2019-08-31 15:25:49,304 INFO  [Log] 3. Click the Search button 
+2019-08-31 15:25:51,934 INFO  [Log] 4. Sort the results by "Average Customer Review" 
+2019-08-31 15:25:54,202 INFO  [Log] 5. Filter results to only show calculators in the range of $300 to $350 
+2019-08-31 15:25:56,045 INFO  [Log] 6. Save , all the search results into a List of WebElements 
+2019-08-31 15:25:56,110 INFO  [Log] 18 results for Electronics : $300-$350 : "calculator" 
+2019-08-31 15:25:56,111 INFO  [Log] 7. Use a for-each loop to assert that each result title contains the word calculator 
+2019-08-31 15:25:56,155 INFO  [Log] Hewlett Packard 41CV calculator 
+2019-08-31 15:25:56,181 INFO  [Log] 100 Units X 10-Digit Scientific Calculator 
+2019-08-31 15:25:56,205 INFO  [Log] HP 15C Limited Edition Scientific Calculator 
+2019-08-31 15:25:56,229 INFO  [Log] Low Vision Scientific Calculator 
+2019-08-31 15:25:56,252 INFO  [Log] SHRQS2770H - Sharp QS2770H Commercial Calculator 
+2019-08-31 15:25:56,275 INFO  [Log] Wholesale CASE of 3 - Victor 12-Digit Thermal Printing Calculator-14-Digit Thermal Printing Calculator,8-1/2"x12"x3-1/2", Gray 
+2019-08-31 15:25:56,297 INFO  [Log] Compucessory Simple 12-Digit LCD Calculator (40 Units) 
+2019-08-31 15:25:56,321 INFO  [Log] Touch Color Screen Graph Calculator English SAT/AP/IB Exam 
+2019-08-31 15:25:56,458 INFO  [Log] Oval Calculator - 250 Quantity - $1.39 Each - Promotional Product/Bulk/Branded with Your Logo/Customized 
+2019-08-31 15:25:56,489 INFO  [Log] Calculator Desktop Calculator Dual Power Supply   12 Digits Widescreen Display Plastic Button Automatic Shut-Down (Pack of 10) 
+2019-08-31 15:25:56,519 INFO  [Log] SHRQS2760H - QS-2760H Two-Color Ribbon Printing Calculator 
+2019-08-31 15:25:56,543 INFO  [Log] HP 11C Scientific Calculator-Like New/Almost MINT! 
+2019-08-31 15:25:56,569 INFO  [Log] Giant Calculator ((10 Pack)) 
+2019-08-31 15:25:56,594 INFO  [Log] Wholesale CASE of 3 - Sharp 12-digit Commercial Print/Display Calculator-12-Digit Calculator, 2 Color Printing, 9-1/2"x12-1/2"x2-2/3" 
+2019-08-31 15:25:56,619 INFO  [Log] Wholesale CASE of 10 - Sharp 12-Digit Semi Desktop Display Calculator-12-Digit Calculator,Dual Power,4-Key Memory,4-1/3"x7"x3/4" 
+2019-08-31 15:25:56,644 INFO  [Log] TI Calculator Base Lab 2 
+2019-08-31 15:25:56,670 INFO  [Log] 10-digit display calculator GENTOS (Gen toss) friendly calculator (nice mini size) White YD-361 (japan import) 
+2019-08-31 15:25:56,705 INFO  [Log] BAZIC 8-Digit Pocket Size Calculator w/ Flip Cover 
+2019-08-31 15:25:56,717 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2019-08-31 15:25:56,717 INFO  [Log] X 
+2019-08-31 15:25:56,720 INFO  [Log] Close Browser 
+2019-08-31 15:26:00,810 INFO  [Log] **************************************************************************************** 
+2019-08-31 15:26:00,810 INFO  [Log] ****************************          TC: RestAssured Get Details       ************************* 
+2019-08-31 15:26:00,810 INFO  [Log] **************************************************************************************** 
+2019-08-31 15:26:00,810 INFO  [Log] Specify baseURI to RESTful WebService 
+2019-08-31 15:26:01,190 INFO  [Log] Get RequestSpecification of request 
+2019-08-31 15:26:01,268 INFO  [Log] Request server and get response 
+2019-08-31 15:26:02,070 INFO  [Log] Print response body 
+2019-08-31 15:26:02,087 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2019-08-31 15:26:02,087 INFO  [Log] X 
+2019-08-31 15:26:02,097 INFO  [Log] **************************************************************************************** 
+2019-08-31 15:26:02,097 INFO  [Log] ****************************          TC: RestAssured Verify Specific Data       ************************* 
+2019-08-31 15:26:02,097 INFO  [Log] **************************************************************************************** 
+2019-08-31 15:26:02,097 INFO  [Log] Specify baseURI to RESTful WebService 
+2019-08-31 15:26:02,097 INFO  [Log] Get RequestSpecification of request 
+2019-08-31 15:26:02,098 INFO  [Log] Request server and get response 
+2019-08-31 15:26:02,520 INFO  [Log] **************************************************************************************** 
+2019-08-31 15:26:02,521 INFO  [Log] ****************************          TC: RestAssured Verify Status Code       ************************* 
+2019-08-31 15:26:02,521 INFO  [Log] **************************************************************************************** 
+2019-08-31 15:26:02,521 INFO  [Log] Specify baseURI to RESTful WebService 
+2019-08-31 15:26:02,521 INFO  [Log] Get RequestSpecification of request 
+2019-08-31 15:26:02,521 INFO  [Log] Request server and get response 
+2019-08-31 15:26:02,648 INFO  [Log] Assert Status Code correct: 200 
+2019-08-31 15:26:02,653 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2019-08-31 15:26:02,653 INFO  [Log] X 
