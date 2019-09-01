@@ -68,7 +68,7 @@ public class BrowserFactory {
 		for (String key : drivers.keySet())
 		{
 			drivers.get(key).close();
-			drivers.get(key).quit();
+//			drivers.get(key).quit();
 		}
 	}
 }

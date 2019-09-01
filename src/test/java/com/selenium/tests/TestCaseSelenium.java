@@ -6,11 +6,9 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;

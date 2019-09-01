@@ -2,6 +2,7 @@
 <suite name = "Test Suite">
 	<test name = "amazon">
 		<classes>
+			<class name = "com.selenium.tests.AppTest" />
 			<class name = "com.selenium.tests.TestCaseSelenium" />
 			<class name = "com.restassured.tests.TestCaseRestAssured" />
 		</classes>
