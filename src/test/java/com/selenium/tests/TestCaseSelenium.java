@@ -19,11 +19,12 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.common.utility.Log;
+import com.selenium.framework.factory.BrowserFactory;
+import com.selenium.framework.factory.BrowserName;
 
 public class TestCaseSelenium {
 	
   public WebDriver driver;
-  protected static final String BROWSER_DRIVER = "F:\\GITHUB\\setups\\BROWSER_DRIVERS\\";
   public String baseUrl = "http://www.amazon.com";
   public String searchText = "calculator";
   WebElement searchTextBox;
@@ -91,17 +92,8 @@ public class TestCaseSelenium {
   
   @BeforeMethod
   public void beforeMethod() {
-	  DOMConfigurator.configure("log4j.xml");
+	  driver = BrowserFactory.getBrowser(BrowserName.CHROME);
 	  Log.info("Open Browser with URL: " + baseUrl);
-
-	  // Firefox
-//	  System.setProperty("webdriver.gecko.driver", BROWSER_DRIVER + "geckodriver.exe");
-//	  FirefoxOptions ffOptions = new FirefoxOptions();
-//	  ffOptions.setCapability("marionette", true);
-//	  driver = new FirefoxDriver(ffOptions);
-	  
-	  // Chrome
-	  driver = new ChromeDriver();
 	  driver.manage().timeouts().implicitlyWait(10,  TimeUnit.SECONDS);
 	  driver.get(baseUrl);
   }
@@ -109,8 +101,6 @@ public class TestCaseSelenium {
   
   @AfterMethod
   public void afterMethod() {
-	  Log.info("Close Browser");
-	  driver.close();
-//	  driver.quit();
+	  BrowserFactory.closeAllDrivers();
   }
 }
