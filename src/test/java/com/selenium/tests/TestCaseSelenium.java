@@ -3,6 +3,7 @@ package com.selenium.tests;
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.MatcherAssert.assertThat;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -12,17 +13,19 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.common.utility.Log;
+import com.common.utility.ObjectRepoParser;
 import com.selenium.framework.factory.BrowserFactory;
 import com.selenium.framework.factory.BrowserName;
 
 public class TestCaseSelenium {
 	
-  public WebDriver driver;
+  private WebDriver driver;
+  private ObjectRepoParser objRepoParser;
   public String baseUrl = "http://www.amazon.com";
   public String searchText = "calculator";
   WebElement searchTextBox;
@@ -35,10 +38,24 @@ public class TestCaseSelenium {
   WebElement maxPrice;
   WebElement goButton;
   
+  @BeforeClass
+  public void beforeClass() throws IOException {
+	  driver = BrowserFactory.getBrowser(BrowserName.CHROME);
+	  Log.info("Open Browser with URL: " + baseUrl);
+	  driver.manage().timeouts().implicitlyWait(10,  TimeUnit.SECONDS);
+	  driver.get(baseUrl);
+	  objRepoParser = new ObjectRepoParser("ObjectRepo.properties");
+  }
+
+  @AfterClass
+  public void afterClass() {
+	  BrowserFactory.closeAllDrivers();
+  }
+  
   @Test
   public void searchVerify() {
-	  searchCategoryDropDownElement = driver.findElement(By.id("searchDropdownBox"));
-	  searchTextBox = driver.findElement(By.id("twotabsearchtextbox"));
+	  searchCategoryDropDownElement = driver.findElement(objRepoParser.getObjectLocator("searchCategoryDropDownElement"));
+	  searchTextBox = driver.findElement(objRepoParser.getObjectLocator("searchTextBox"));
 	  
 	  Log.startTestCase("TC: SeleniumWD Search and Verify");
 	  
@@ -86,19 +103,5 @@ public class TestCaseSelenium {
 	  }
   
 	  Log.endTestCase("End Test Case");
-  }
-  
-  @BeforeMethod
-  public void beforeMethod() {
-	  driver = BrowserFactory.getBrowser(BrowserName.CHROME);
-	  Log.info("Open Browser with URL: " + baseUrl);
-	  driver.manage().timeouts().implicitlyWait(10,  TimeUnit.SECONDS);
-	  driver.get(baseUrl);
-  }
-
-  
-  @AfterMethod
-  public void afterMethod() {
-	  BrowserFactory.closeAllDrivers();
   }
 }
