@@ -1,4 +1,4 @@
-package com.common.utility;
+package com.selenium.objectsrepo;
 
 import java.io.FileInputStream;
 import java.io.IOException;

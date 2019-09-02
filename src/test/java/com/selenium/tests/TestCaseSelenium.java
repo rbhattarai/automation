@@ -18,9 +18,9 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.common.utility.Log;
-import com.common.utility.ObjectRepoParser;
 import com.selenium.framework.factory.BrowserFactory;
 import com.selenium.framework.factory.BrowserName;
+import com.selenium.objectsrepo.ObjectRepoParser;
 
 public class TestCaseSelenium {
 	
@@ -70,32 +70,32 @@ public class TestCaseSelenium {
 	  
 	  Log.info("3. Click the Search button");
 	  searchTextBox.submit();
-	  sortByDD = driver.findElement(By.id("a-autoid-0-announce"));
+	  sortByDD = driver.findElement(objRepoParser.getObjectLocator("sortByDD"));
 
 	  Log.info("4. Sort the results by \"Average Customer Review\"");
 	  sortByDD.click();
-	  sortByAvgCustRev = driver.findElement(By.id("s-result-sort-select_3"));
+	  sortByAvgCustRev = driver.findElement(objRepoParser.getObjectLocator("sortByAvgCustRev"));
 	  sortByAvgCustRev.click();
 	  
 	  Log.info("5. Filter results to only show calculators in the range of $300 to $350");
-	  minPrice = driver.findElement(By.id("low-price"));
-	  maxPrice = driver.findElement(By.id("high-price"));
+	  minPrice = driver.findElement(objRepoParser.getObjectLocator("minPrice"));
+	  maxPrice = driver.findElement(objRepoParser.getObjectLocator("maxPrice"));
 	  minPrice = (new WebDriverWait(driver,10)).until(ExpectedConditions.presenceOfElementLocated(By.id("low-price")));
 	  maxPrice = (new WebDriverWait(driver,10)).until(ExpectedConditions.presenceOfElementLocated(By.id("high-price")));
 	  minPrice.click();
 	  minPrice.sendKeys("300");
 	  maxPrice.click();
 	  maxPrice.sendKeys("350");
-	  goButton = driver.findElement(By.className("a-button-input"));
+	  goButton = driver.findElement(objRepoParser.getObjectLocator("goButton"));
 	  goButton.click();
 	  
 	  Log.info("6. Save , all the search results into a List of WebElements");
-	  WebElement resultsCount = driver.findElement(By.className("sg-col-inner"));
+	  WebElement resultsCount = driver.findElement(objRepoParser.getObjectLocator("resultsCount"));
 	  assertThat(resultsCount.getText(), containsString("Electronics : $300-$350 : \"calculator\""));
 	  Log.info(resultsCount.getText());
 	  
 	  Log.info("7. Use a for-each loop to assert that each result title contains the word calculator");
-	  List<WebElement> resultTitles = driver.findElements(By.cssSelector("h2 a span"));
+	  List<WebElement> resultTitles = driver.findElements(objRepoParser.getObjectLocator("resultTitles"));
 	  for (WebElement resultTitle : resultTitles)
 	  {
 		  Log.info(resultTitle.getText());
