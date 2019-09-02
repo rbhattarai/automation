@@ -1,29 +1,22 @@
 package com.selenium.tests;
 
-import org.testng.annotations.Test;
-
-import com.common.utility.Log;
-import com.selenium.framework.factory.BrowserFactory;
-import com.selenium.framework.factory.BrowserName;
-import com.selenium.objectsRepository.ObjectRepoParser;
-import com.selenium.pageObjects.SearchPage;
-import com.selenium.pageObjects.SearchResultsPage;
-
-import org.testng.annotations.BeforeClass;
-
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+
+import com.common.utility.Log;
+import com.selenium.framework.factory.BrowserFactory;
+import com.selenium.framework.factory.BrowserName;
+import com.selenium.pageObjects.SearchPage;
+import com.selenium.pageObjects.SearchResultsPage;
 
 public class TestCasePOM {
 	
@@ -32,7 +25,7 @@ public class TestCasePOM {
 	public String searchText = "calculator";
 
 
-	@Test
+	//@Test
 	public void amazonSearchAndVerify()
 	{
 		Log.startTestCase("TC: SeleniumWD POM Search and Verify");
