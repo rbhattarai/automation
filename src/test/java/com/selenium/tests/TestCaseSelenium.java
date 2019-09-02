@@ -20,7 +20,7 @@ import org.testng.annotations.Test;
 import com.common.utility.Log;
 import com.selenium.framework.factory.BrowserFactory;
 import com.selenium.framework.factory.BrowserName;
-import com.selenium.objectsrepo.ObjectRepoParser;
+import com.selenium.objectsRepository.ObjectRepoParser;
 
 public class TestCaseSelenium {
 	
@@ -38,7 +38,7 @@ public class TestCaseSelenium {
   WebElement maxPrice;
   WebElement goButton;
   
-  @BeforeClass
+//  @BeforeClass
   public void beforeClass() throws IOException {
 	  driver = BrowserFactory.getBrowser(BrowserName.CHROME);
 	  Log.info("Open Browser with URL: " + baseUrl);
@@ -47,12 +47,12 @@ public class TestCaseSelenium {
 	  objRepoParser = new ObjectRepoParser("ObjectRepo.properties");
   }
 
-  @AfterClass
+//  @AfterClass
   public void afterClass() {
 	  BrowserFactory.closeAllDrivers();
   }
   
-  @Test
+//  @Test
   public void searchVerify() {
 	  searchCategoryDropDownElement = driver.findElement(objRepoParser.getObjectLocator("searchCategoryDropDownElement"));
 	  searchTextBox = driver.findElement(objRepoParser.getObjectLocator("searchTextBox"));
