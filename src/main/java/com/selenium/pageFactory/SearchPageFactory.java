@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.PageFactory;
 
 public class SearchPageFactory {
 	
@@ -12,10 +13,15 @@ public class SearchPageFactory {
 	public SearchPageFactory(WebDriver driver)
 	{
 		this.driver = driver;
+		//PageFactory.initElements() should be done to initialize all WebElements either in this construtor or in Test
+//		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy (how = How.ID, using = "searchDropdownBox")
+	@FindBy (id = "searchDropdownBox")
 	public WebElement searchCategoryDropDownElement;
+	//or
+//	@FindBy (how = How.ID, using = "searchDropdownBox")
+//	public WebElement searchCategoryDropDownElement;
 	
 	@FindBy (how = How.ID, using = "twotabsearchtextbox")
 	public WebElement searchTextBox;

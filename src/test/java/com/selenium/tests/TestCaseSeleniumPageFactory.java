@@ -9,6 +9,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -29,6 +30,7 @@ public class TestCaseSeleniumPageFactory {
 	
 	SearchPageFactory searchPage; 
 	SearchResultsPageFactory resultsPage;
+//	AjaxElementLocatorFactory ajaxElement;
 	
 	@BeforeClass
 	public void beforeClass() {
@@ -36,8 +38,10 @@ public class TestCaseSeleniumPageFactory {
 		  Log.info("Open Browser with URL: " + baseUrl);
 		  driver.manage().timeouts().implicitlyWait(10,  TimeUnit.SECONDS);
 		  driver.get(baseUrl);
-		  searchPage = PageFactory.initElements(driver, SearchPageFactory.class);
+		  //searchPage can be alternatively initialized in SearchPageFactory constructor
+		  searchPage = PageFactory.initElements(driver, SearchPageFactory.class); 
 		  resultsPage = PageFactory.initElements(driver, SearchResultsPageFactory.class );
+//		  ajaxElement = new AjaxElementLocatorFactory(driver, 100);
 	}
 	
 	@AfterClass
