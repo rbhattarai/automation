@@ -4,6 +4,8 @@
 		<classes>
 			<class name = "com.selenium.tests.AppTest" />
 			<class name = "com.selenium.tests.TestCaseSelenium" />
+			<class name = "com.selenium.tests.TestCaseSeleniumPOM" />
+			<class name = "com.selenium.tests.TestCaseSeleniumPageFactory" />
 			<class name = "com.restassured.tests.TestCaseRestAssured" />
 		</classes>
 	</test>

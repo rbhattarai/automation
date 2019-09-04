@@ -4,55 +4,28 @@ import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 import org.openqa.selenium.support.ui.Select;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.common.utility.Log;
-import com.selenium.framework.factory.BrowserFactory;
-import com.selenium.framework.factory.BrowserName;
 import com.selenium.pageFactory.SearchPageFactory;
 import com.selenium.pageFactory.SearchResultsPageFactory;
 
 
-public class TestCaseSeleniumPageFactory {
+public class TestCaseSeleniumPageFactory extends AppTest {
 	
-	private static WebDriver driver = null;
-	public String baseUrl = "http://www.amazon.com";
-	public String searchText = "calculator";
-	
-	SearchPageFactory searchPage; 
-	SearchResultsPageFactory resultsPage;
-//	AjaxElementLocatorFactory ajaxElement;
-	
-	@BeforeClass
-	public void beforeClass() {
-		  driver = BrowserFactory.getBrowser(BrowserName.CHROME);
-		  Log.info("Open Browser with URL: " + baseUrl);
-		  driver.manage().timeouts().implicitlyWait(10,  TimeUnit.SECONDS);
-		  driver.get(baseUrl);
-		  //searchPage can be alternatively initialized in SearchPageFactory constructor
-		  searchPage = PageFactory.initElements(driver, SearchPageFactory.class); 
-		  resultsPage = PageFactory.initElements(driver, SearchResultsPageFactory.class );
-//		  ajaxElement = new AjaxElementLocatorFactory(driver, 100);
-	}
-	
-	@AfterClass
-	public void afterClass() {
-		driver.close();
-	}
-	
-	@Test
-	public void amazonProductSearchAndVerify()
+	@Test (priority = 4)
+	public void amazonProductSearchAndVerifyPageFactory()
 	{
-		Log.startTestCase("TC: SeleniumWD Page Factory Search and Verify");
+		Log.startTestCase("TC: SeleniumWD using Page Factory Search and Verify");
+
+		//searchPage can be alternatively initialized in SearchPageFactory constructor
+		searchPage = PageFactory.initElements(driver, SearchPageFactory.class); 
+		resultsPage = PageFactory.initElements(driver, SearchResultsPageFactory.class );
+//		  ajaxElement = new AjaxElementLocatorFactory(driver, 100);
 		
 		Log.info("1. Change the search type to Electronics");
 		searchPage.searchCategoryDropDownElement.click();
@@ -60,6 +33,7 @@ public class TestCaseSeleniumPageFactory {
 		searchCategoryDropDown.selectByVisibleText("Electronics");
 		  
 		Log.info("2. Enter the search term calculators");
+		searchPage.searchTextBox.clear();
 		searchPage.searchTextBox.sendKeys(searchText);
 //		searchPage.searchTextBox.sendKeys(searchText + "\n" + Keys.ENTER);
 		  

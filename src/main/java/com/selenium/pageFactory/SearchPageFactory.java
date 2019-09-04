@@ -17,11 +17,11 @@ public class SearchPageFactory {
 //		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy (id = "searchDropdownBox")
-	public WebElement searchCategoryDropDownElement;
-	//or
-//	@FindBy (how = How.ID, using = "searchDropdownBox")
+//	@FindBy (id = "searchDropdownBox")
 //	public WebElement searchCategoryDropDownElement;
+	//or
+	@FindBy (how = How.ID, using = "searchDropdownBox")
+	public WebElement searchCategoryDropDownElement;
 	
 	@FindBy (how = How.ID, using = "twotabsearchtextbox")
 	public WebElement searchTextBox;

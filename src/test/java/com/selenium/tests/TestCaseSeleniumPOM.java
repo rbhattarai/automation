@@ -4,31 +4,21 @@ import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 
 import com.common.utility.Log;
-import com.selenium.framework.factory.BrowserFactory;
-import com.selenium.framework.factory.BrowserName;
 import com.selenium.pageObjects.SearchPage;
 import com.selenium.pageObjects.SearchResultsPage;
 
-public class TestCasePOM {
+public class TestCaseSeleniumPOM extends AppTest {
 	
-	private static WebDriver driver = null;
-	public String baseUrl = "http://www.amazon.com";
-	public String searchText = "calculator";
-
-
-	//@Test
-	public void amazonSearchAndVerify()
+	@Test (priority = 3)
+	public void amazonSearchAndVerifyPOM()
 	{
-		Log.startTestCase("TC: SeleniumWD POM Search and Verify");
+		Log.startTestCase("TC: SeleniumWD using POM Search and Verify");
 		
 		Log.info("1. Change the search type to Electronics");
 		SearchPage.searchCategoryDropDownElement(driver).click();
@@ -36,6 +26,7 @@ public class TestCasePOM {
 		searchCategoryDropDown.selectByVisibleText("Electronics");
 		  
 		Log.info("2. Enter the search term calculators");
+		SearchPage.searchTextBox(driver).clear();
 		SearchPage.searchTextBox(driver).sendKeys(searchText);
 //		SearchPage.searchTextBox(driver).sendKeys(searchText + "\n" + Keys.ENTER);
 		  
@@ -65,18 +56,4 @@ public class TestCasePOM {
 
 		Log.endTestCase("End Test Case");			 
 	}
-	
-	@BeforeClass
-	public void beforeClass() {
-		  driver = BrowserFactory.getBrowser(BrowserName.CHROME);
-		  Log.info("Open Browser with URL: " + baseUrl);
-		  driver.manage().timeouts().implicitlyWait(10,  TimeUnit.SECONDS);
-		  driver.get(baseUrl);
-	}
-	
-	@AfterClass
-	public void afterClass() {
-		driver.close();
-	}
-
 }
