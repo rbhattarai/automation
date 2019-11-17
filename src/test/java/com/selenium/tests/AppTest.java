@@ -21,7 +21,7 @@ public class AppTest {
   public SearchPageFactory searchPage; 
   public SearchResultsPageFactory resultsPage;
 //  public AjaxElementLocatorFactory ajaxElement;
-  
+
 	public AppTest() {
 		  driver = BrowserFactory.getBrowser(BrowserName.CHROME);
 		  Log.info("Open Browser with URL: " + baseUrl);
@@ -33,5 +33,6 @@ public class AppTest {
 	public void tearDown() {
 		Log.info("Close all Browsers");
 		BrowserFactory.closeAllDrivers();
-	}
+	} 
+	
 }
